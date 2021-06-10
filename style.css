@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root 
+{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: rgb(19, 19, 19);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container
+{
+    display: grid;
+    height: 100vh;
+}
+
+.grid
+{
+    display: grid;
+}
+
+/* Slideshow Starts */
+
+.slideshow
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 48px 1fr auto auto; */
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.slide
+{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    /* height: 100%;
+    width: 100%; */
+    /* border-radius: 4px; */
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.next
+{
+   text-align: right;
+}
+.slide i
+{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    -webkit-user-select: none;
+    
+}
+
+.slide i:hover
+{
+    background: rgba(35, 35, 46, 0.8);
+}
+
+
+.caption-container 
+{
+    text-align: center;
+    font-size: 1rem;
+    /* #222 tot se potriveste bine */
+    background-color: #23232e; 
+    padding: 2px 16px;
+    color: white;
+}
+
+
+#slider-container 
+{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	height: 140px;
+	gap: 1%;
+	justify-content: center;
+}
+
+/* CSS transition applied when translation of items happen */
+.slider-container-transition 
+{
+	transition: transform 0.7s ease-in-out;
+}
+
+.slider-item 
+{
+	width: 19%;
+	text-align: center;
+	flex-shrink: 0;
+	background-color: #23232e;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	font-size: 3rem;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+    opacity: 0.4; 
+    color: #ccc;
+}
+
+.active, .slider-item:hover 
+{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/* Slideshow Ends */

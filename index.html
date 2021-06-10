@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41e0c00f0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SlideShow</title>
+</head>
+<body>
+    <div class="container">
+        <section class="slideshow">
+            <div class="slide grid">
+                <a class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+    
+            <div class="caption-container">
+                <p id="caption"><i class="fas fa-map-marker-alt"></i> <span id="caption-text">Mount Fuji, Kitayama, Fujinomiya, Shizuoka, Japan</span></p>
+            </div>
+    
+            <div id="slider-container" class="slider-container-transition">
+                <div class="slider-item" aria-label="Kawagoe, Japan" data-position="1" alt="" style="background-image: url('images/img_jap0.jpg');"></div>
+                <div class="slider-item" aria-label="Hatsukaichi-shi, Japan" data-position="2" style="background-image: url('images/img_jap1.jpg');"></div>
+                <div class="slider-item" aria-label="Cherry blossoms in Kyoto" data-position="3" style="background-image: url('images/img_jap2.jpg');"></div>
+                <div class="slider-item" aria-label="Mount Fuji, Fujinomiya, Japan" data-position="4" style="background-image: url('images/img_jap3.jpg');"></div>
+                <div class="slider-item" aria-label="Kiyozumi Dera, Kyoto, Japan" data-position="5" style="background-image: url('images/img_jap4.jpg');"></div>
+                <div class="slider-item" aria-label="Eshin Temple, 3 Chome-5-15 Aoki, Kawaguchi" data-position="6" style="background-image: url('images/img_jap5.jpg');"></div>
+                <div class="slider-item" aria-label="Lit up alleyway in Kyoto, Japan" data-position="7" style="background-image: url('images/img_jap6.jpg');"></div>
+                <div class="slider-item" aria-label="Hamamatsu, Japan" data-position="8" style="background-image: url('images/img_jap7.jpg');"></div>
+                <div class="slider-item" aria-label="Showa Era Time Capsule" data-position="9" style="background-image: url('images/img_jap8.jpg');"></div>
+                
+            </div>
+        </section>    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
